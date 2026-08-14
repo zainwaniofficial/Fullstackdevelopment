@@ -68,13 +68,77 @@
 //     console.log(i)
 // }
 
+//patterns
 
+// *
+// **
+// ***
+// ****
+// *****
 
-for(let i = 1; i<=5;i++){
-    for(let j = 1; j<=i; j++){
+// for(let i = 1; i<=5;i++){
+//     for(let j = 1; j<=i; j++){
 
-        let str = "*"
-        console.log(str.repeat(i))
+//         let str = "*"
+//         console.log(str.repeat(i))
   
-    }
+//     }
+// }
+
+
+
+//spread operator
+
+// lets concat two arrays
+
+// let arr1 = [2,3,4,5,6,7];
+// let arr2 = [8,9,10,11,12,13,14];
+
+//now i want to concat and get the new array but when i do that using
+// + icon  like console.log(arr1+arr2) it gives the array as string i want concated string as array also
+
+// so i will use spread operator
+
+
+// let newarr = [...arr1 , ...arr2]
+
+// console.log(newarr)
+
+//create a card which takes 3 arguments name age and city and the city should be optional keep it default using function
+
+//lets make 
+
+let card = (name , age , city = "srinagar")=>{
+        console.log(" Your name is " , name);
+        console.log(" Your Age is " , age);
+        console.log(" Your city is " , city);
+
 }
+
+// let user1 = ProcessingInstruction.arguments()
+// const user1 = process.argv[2];
+
+
+
+
+// card("saqibpaul",23,"pulwama")
+
+// card("xain",24)
+
+
+let bill =( ...rest)=>{
+ console.log(rest)  
+ 
+ let sum = 0;
+ for( let i=1;i<=rest.length;i++){
+    sum = sum + rest[i];
+    return sum
+ }
+}
+
+
+let payment1 = bill(30,400,50,250)
+let payment2 = bill(20,20,20,20)
+
+console.log(payment1)
+console.log(payment2)
