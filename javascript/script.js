@@ -126,19 +126,54 @@ let card = (name , age , city = "srinagar")=>{
 // card("xain",24)
 
 
-let bill =( ...rest)=>{
- console.log(rest)  
+// let bill =( ...rest)=>{
+//  console.log(rest)  
  
- let sum = 0;
- for( let i=1;i<=rest.length;i++){
-    sum = sum + rest[i];
-    return sum
- }
-}
+//  let sum = 0;
+//  for( let i=1;i<=rest.length;i++){
+//     sum = sum + rest[i];
+//     return sum
+//  }
+// }
 
 
-let payment1 = bill(30,400,50,250)
-let payment2 = bill(20,20,20,20)
+// let payment1 = bill(30,400,50,250)
+// let payment2 = bill(20,20,20,20)
 
-console.log(payment1)
-console.log(payment2)
+// console.log(payment1)
+// console.log(payment2)
+
+// let passowrd = prompt("Enter your passowrd")
+
+// let passwordChecker = ()=>{
+
+//         if(passowrd.length < 8){
+//                 console.log("weak password")
+//         }
+//         else if(passowrd.length > 8 && passowrd.length < 12){
+//                 console.log("passowrd length is moderate")
+//         }
+//         else if (passowrd.length > 12 && passowrd.length <20){
+
+//                 console.log("Strong password nice!")
+//         }
+
+// }
+
+// passwordChecker()
+
+//call back function
+
+// let greet = ()=>{
+
+//         console.log("asalamualiakum")
+// }
+
+
+// let fun = (hell) =>{
+//         hell()
+// }
+
+// fun(greet)
+
+
