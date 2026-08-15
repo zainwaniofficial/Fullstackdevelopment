@@ -177,3 +177,92 @@ let card = (name , age , city = "srinagar")=>{
 // fun(greet)
 
 
+// let handshake = (callback)=>{
+        
+
+//         console.log("shaking hand")
+//         callback()
+
+
+//         // return shake
+// }
+
+// let callfun = ()=>{
+
+//         console.log("calling here some other function")
+// }
+
+// handshake(callfun)
+
+
+
+
+//higher order function
+
+// aise function jo apne ander means childer functon 
+// accepy karei ya koye aur function  return kareii 
+
+// fun1 = ()=>{
+
+//         return ()=>{
+//                 console.log("i am inner function")
+//         }
+// }
+
+
+// console.log(fun1())
+
+
+// here f1 has higher order
+
+
+
+
+// let outerFun = ()=>{
+
+// return ()=>{
+
+//         return ()=>{
+//                 console.log("depest function")
+//         }
+// }
+// }
+
+
+// console.log(outerFun()()())
+
+
+
+//Recursion function calling itself
+
+
+// example
+
+
+// let greet = ()=>{
+
+//         console.log("hey....");
+
+//         greet();
+// }
+
+// greet()  //it will go infinite 
+
+
+// so we will have to give condition 
+
+
+let greet = (a)=>{
+
+        if(a === 3){
+                return;
+        }
+
+        console.log("hey.....")
+
+        greet(a --- 1)
+}
+
+greet(20)
+
+
