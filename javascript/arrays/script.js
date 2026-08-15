@@ -180,12 +180,70 @@ console.log("array after applying sort method" , sortedArr)
 //basically it sorts the elements based on their ASCAII value
 
 
+//now if we want to sort the value perfectly we have to use fun in this inside sort 
+
+
+let arr3 = [2,50,30,5,60,7,60,9,50];
+
+let arr32 = arr3.sort((a,b)=>{
+
+    return a - b;
+})
+
+
+console.log(arr32)
+
+
+
+//now lets move to those methods which don't reflect changes in actual array they make changes and provide that as a new array
+
+
 //methods that give the changes in a new array mens thay dont make changes to actual array
 
 // slice , concat , map , filter
 
 
+// lets talk about slice first 
 
+//slice
+//slice is used to make the slices to the array as give those slices in new arrays
+
+let arr4 = [1,2,3,4,5,6,7,8]
+
+// now i want to make the new array 
+
+let newarr2 = arr4.slice(0,3)
+
+console.log(newarr2)
+
+console.log(arr4) //if we check orignal array it kept unchanged
+
+
+
+//now lets see concat 
+
+// concat
+
+// concat combines two arrays and make the new array of them 
+
+let arrayOne = ["hello", "my" , "name" , "is"]
+
+let arraytwo = ["xain" , "wani" , "kashmir"]
+
+
+//now lets concat them
+
+ let arrThree = arrayOne.concat(arraytwo)
+
+ console.log(arrThree)
+
+//instead of this we can use simply spread operator
+
+
+let arr5 = [...arrayOne , ...arraytwo]
+
+console.log(arr5)
+ 
 //returns values
 
 //find ,includes ,indexof , reduce , some ,every //these dont make changes in actual array nar it makes the new array
