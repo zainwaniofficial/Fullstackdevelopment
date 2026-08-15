@@ -252,17 +252,17 @@ let card = (name , age , city = "srinagar")=>{
 // so we will have to give condition 
 
 
-let greet = (a)=>{
+// let greet = (a)=>{
 
-        if(a === 3){
-                return;
-        }
+//         if(a === 3){
+//                 return;
+//         }
 
-        console.log("hey.....")
+//         console.log("hey.....")
 
-        greet(a --- 1)
-}
+//         greet(a --- 1)
+// }
 
-greet(20)
+// greet(20)
 
 
