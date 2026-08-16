@@ -248,3 +248,15 @@ console.log(arr5)
 
 //find ,includes ,indexof , reduce , some ,every //these dont make changes in actual array nar it makes the new array
 
+
+
+//now learning the most important and most using concept .map 
+
+
+let friends = ["zain" , "saqib" , "irtiqa" , "mehak" ,"bilal" , "danish" , "amandeep" , "durfshaan"]
+
+let newarr = friends.map((i)=>{
+    console.log(i)
+}) 
+
+// console.log(newarr)
