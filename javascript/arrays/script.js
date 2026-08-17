@@ -15,10 +15,10 @@ let students = [ "saqib" , "amir" , "shariq" , "bilal" , "durfshaan"]
 
 // // printing all students 
 
-// for(let i = 0; i< students.length; i++){
+for(let i = 0; i< students.length; i++){
 
-//     console.log("students are " , students[i])
-// }
+    console.log("students are " , students[i])
+}
 
 
 // we can modify the values of array also 
@@ -260,3 +260,54 @@ let newarr = friends.map((i)=>{
 }) 
 
 // console.log(newarr)
+
+// lets practice for some time 
+
+//push 
+
+friends.push('junior')
+
+console.log(friends)
+
+
+// push is used to add the element on the end of the array
+
+
+// pop
+
+// pop is used to remove the element from the array end side magar
+
+    friends.pop()
+
+    console.log(friends)
+
+
+    //shift
+
+    //shift is used to remove the element in the front of an array
+
+    friends.shift()
+
+    friends.push("sakiya")
+
+
+
+    console.log(friends)
+
+    //unshift is used to add the element in the front of an array
+
+    friends.unshift("xain")
+
+    console.log(friends)
+
+    //reverse
+
+    //reverse is used to reverse the array
+
+    friends.reverse()
+
+    console.log(friends)
+    
+    friends.reverse()
+    
+    console.log(friends)
