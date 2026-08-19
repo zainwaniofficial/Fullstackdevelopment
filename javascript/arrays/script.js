@@ -249,15 +249,11 @@ console.log(arr5)
 //find ,includes ,indexof , reduce , some ,every //these dont make changes in actual array nar it makes the new array
 
 
-
-//now learning the most important and most using concept .map 
-
-
 let friends = ["zain" , "saqib" , "irtiqa" , "mehak" ,"bilal" , "danish" , "amandeep" , "durfshaan"]
 
-let newarr = friends.map((i)=>{
-    console.log(i)
-}) 
+
+
+
 
 // console.log(newarr)
 
@@ -289,25 +285,55 @@ console.log(friends)
     friends.shift()
 
     friends.push("sakiya")
-
-
-
+    
+    
+    
     console.log(friends)
-
+    
     //unshift is used to add the element in the front of an array
-
+    
     friends.unshift("xain")
-
+    
     console.log(friends)
-
+    
     //reverse
-
+    
     //reverse is used to reverse the array
-
+    
     friends.reverse()
-
+    
     console.log(friends)
     
     friends.reverse()
     
     console.log(friends)
+
+
+
+
+
+
+
+
+
+    //now learning the most important and most using concept .map 
+
+        //map itrates through an array and gives an new array
+// friends.shift()
+
+ let chkarray = friends.map((val)=>{
+    // let modify = val + "pagal"
+
+
+    return val === "mehak" ? "janu" : val
+}) 
+
+
+console.log(chkarray)   //here we check it returned undefined ellements 
+
+
+//map returns new array , so if we check our original array it will not change or affect the original array
+
+// console.log(friends)
+
+
