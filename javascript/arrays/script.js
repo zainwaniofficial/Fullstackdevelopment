@@ -337,3 +337,57 @@ console.log(chkarray)   //here we check it returned undefined ellements
 // console.log(friends)
 
 
+// for each 
+
+let freach = friends.forEach((val)=>{
+
+    console.log(val)
+
+    return "hello"
+})
+
+console.log(freach)  // it will return undefined
+
+//for each is used to itetrate through an array but it does not return anything 
+const thoughts = [
+  "I think, therefore I am. (Rene Descartes)",
+  "I may disagree with what you say, but I will defend to death your right to say it. (Evelyn Beatrice Hall)",
+  "If men were perfectly virtuous, they wouldn’t have friends. (Montesquieu)",
+  "Ignorance is bliss.",
+  "People do what they hate for money and use the money to do what they love. (Jimmy O. Yang’s dad?)",
+  "Small things make perfection, but perfection is no small thing. (Sir Henry Royce)",
+  "A masterpiece is born a masterpiece. (Hyouka)",
+  "Who will guard the guardians?",
+  "History will be kind to me, for I intend to write it. (Winston Churchill)",
+  "No problem can be solved from the same level of consciousness that created it. We must see the world anew. (Albert Einstein)",
+
+  "Anyone who has not experienced despair and frustration has never truly experienced joy.",
+  "Anyone who does not evolve is a relic of the past.",
+  "How would you live if you had the same amount of money that, say, the Prince of Saudi Arabia has but didn’t have to look after a country or a business? What would your house look like? And your yard? What would you wear? Would you still work?",
+  "Better to be a loser among winners than to be a winner among losers.",
+  "The world operates on sheep mentality, and I hate it.",
+  "Guilt, disgust, and despair are the worst human emotions.",
+  "I hope I’m wrong, but if and when everybody’s basic needs are fulfilled, the concept of what’s basic will change, and thus, there will never be a time when everybody’s needs are fulfilled."
+];
+
+
+thoughts.map((val)=>{
+
+    // console.log(val)
+
+    
+})
+//filter 
+
+
+let days = ["monday" , "tuesday" , "wednesday" , "thursday" , "friday" , "wednesday","saturday" , "sunday"]
+
+filterdays = days.filter((val)=>{
+
+    return val != "wednesday"
+})
+
+console.log(filterdays)
+
+
+//filter is used to filter the elements of an array 
