@@ -391,3 +391,26 @@ console.log(filterdays)
 
 
 //filter is used to filter the elements of an array 
+
+
+//returns val
+
+//find 
+
+
+let arr = [2,4,5,2,6,4,2,1,0,9,7]
+
+let res = arr.find((val)=>{
+    return val === 2;  // we have 3 times 2 but still it will return only one 2  because where it finds its first finding it exits 
+})
+
+console.log(res)
+
+
+//includes 
+
+//it gives boolean value is that present or not
+
+
+ispresent  = arr.includes(5);
+console.log(ispresent)
