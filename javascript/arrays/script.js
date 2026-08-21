@@ -414,3 +414,51 @@ console.log(res)
 
 ispresent  = arr.includes(5);
 console.log(ispresent)
+
+
+//indexof
+
+//used to find the index of the value 
+
+
+let findindex = friends.indexOf("durfshaan")
+
+console.log(findindex)
+
+
+//some
+
+//tell is there 4 anywhere in the array
+
+let arrr = [2,4,6,8,9,8,7,6,5,]
+
+let ree = arrr.some((val)=>{
+
+    return val === 4
+})
+
+console.log(ree)
+
+
+//every 
+
+//the finds that the val is  everywhere in the array
+
+let evre = arrr.every((val)=>{
+
+    return val === 4
+})
+
+
+console.log(evre)
+
+
+//reduce
+// reduce takes 2 parameters accumulator and value 
+let ress = arrr.reduce((sum,value)=>{
+
+    return sum += value 
+},0)  //here 0 is the intial value of accumulator here sum
+
+
+console.log(ress)
