@@ -455,6 +455,8 @@ console.log(evre)
 
 //reduce
 // reduce takes 2 parameters accumulator and value 
+// accumulator stores the default value
+
 let ress = arrr.reduce((sum,value)=>{
 
     return sum += value 
@@ -462,3 +464,8 @@ let ress = arrr.reduce((sum,value)=>{
 
 
 console.log(ress)
+
+
+//mostly used to store the value of cart
+
+ 
