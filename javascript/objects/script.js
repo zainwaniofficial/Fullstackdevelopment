@@ -14,23 +14,23 @@ let users = {
     result : "pass"
 },
   user2 : {
-    id : 101,
-    name: "xv",
-    class : "12th",
+    id : 102,
+    name: "mehak darling",
+    class : "1st year",
     result : "pass"
 }
 ,
   user3 : {
-    id : 101,
-    name: "xv",
-    class : "12th",
+    id : 103,
+    name: "amandeep",
+    class : "2nd year",
     result : "pass"
 }
 
 }
 // this is the syntex of object it carries the key and values 
 
-console.log(users)
+console.log(users.user2)
 
 // if(student.result == "pass"){
 
@@ -49,3 +49,36 @@ let userdetails = {
 
 
 console.log(userdetails)
+
+//if i have to find the particular value of the object we can use .method
+
+//example
+
+//here if we have find the school of userdetails object
+
+console.log(userdetails.school)
+
+//so using .method can be used to find the particular element of the object
+
+//if we want to modify the actual value of an objects element like here i want to modify the name from major to shuklaa🤣 
+
+//so for that i can simply target that by . and assign the value
+
+
+userdetails.name = "shukla"
+
+// now if i will check the actual value we will get the modified value 
+
+console.log(userdetails)
+
+//another method to do the same is 
+
+//bracket notation
+
+//if i want to change the name of userdetails object
+
+
+userdetails ["name"] = "miss kaur"
+
+console.log(userdetails)  //we will find that name had been changed
+
