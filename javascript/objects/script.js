@@ -82,3 +82,134 @@ userdetails ["name"] = "miss kaur"
 
 console.log(userdetails)  //we will find that name had been changed
 
+
+// if we want to add one more property that is not present in the object we can make that same using . 
+
+
+// example in our object userdetails there is not adhaar number so we can add that 
+
+userdetails.adhaarNo = "101732"
+
+
+// now if we console user details we will find this also 
+
+console.log(userdetails)
+
+
+//same thing we can do by making new property and val by brackets
+
+
+userdetails['city'] = "srinagar"
+
+
+// if we checcck city name property will be in object 
+
+console.log(userdetails)
+
+
+
+// now lets learn about object methods
+
+
+console.log("OBJECT METHODS👍")
+
+//OBJECT KE ANDAR KOYE FUNCTUON HAIN TO WO FUNCTION METHOD HAI SAMJO SAMJO WAIAT
+
+// CHECK EXAMPLE 👇
+
+
+let user = {
+  name: "zain",
+  class : "nan",
+  rollNo : 101732,
+  city : "srinagar",
+ greet(){
+  console.log("salaam")
+ }
+}
+
+//greet function inside a object is method
+
+ 
+
+//object destructuring
+
+
+// if we want to access the multiple keys from the value instead of writing user.name , user.class , user.city
+
+//we can simply write
+
+let  {name,city} = userdetails
+
+console.log(name , city)
+
+
+
+//shallow and deep copy 
+
+
+let product ={
+  name:"sunscreen",
+  type:"cosmatic",
+  price:"450",
+  features:{
+    version: "base model",
+    weight: "600kg",
+    model: "2026"
+  }
+}
+
+
+let product2 = product
+
+product2.price = 750
+
+console.log(product2)
+console.log(product)
+
+//if we check the product it will change the price of product also
+
+// because it uses refrence
+
+//so if we want to copy the key and values only we can use spread operator
+
+
+product3 = {...product}
+
+
+product3.price = 1050  
+
+//if we check the product , we will see that had not been changed now 
+
+console.log(product)
+console.log(product3)
+
+
+//this is called shallow copy
+//shallow copy  effect on level one 
+// if we want to copy the elements  or make changes in spread object that will be reflected to the actual object also
+
+// if we have object in object and we made a change in refrence object that change will be reflected in actual object also
+
+
+// so to overcome this problem we use deep copy 
+
+
+//we can done that by making the object to string by using JSON.Stringfy
+
+//and to use it we use JSON.parse
+
+
+let str = JSON.stringify(product)
+
+let product4 = JSON.parse(str)
+
+product4.features.version = "top model"
+
+
+console.log(product)
+console.log(product4)
+
+
+//if we see now we have changed the object in object 
+//this is called deep copy
