@@ -268,13 +268,32 @@ console.log(objectFreeze) //if we see there will be nothing updated or deleted
 //it is used to update the object
 
 //it can only update and can't done anything
-Object.seal(objectFreeze)
+// Object.seal(objectFreeze)
 
-objectFreeze.district = "Srinagar"
+// objectFreeze.district = "Srinagar"
 
-delete objectFreeze.district //it will not delte the element 
+//delete objectFreeze.district //it will not delte the element 
 
 //object.seal only allows to update 
 
-console.log(objectFreeze)
+// console.log(objectFreeze)
+
+
+//property descriptors
+
+
+
+//tells the properties of the object and these properties are not inherited
+console.log(Object.getOwnPropertyDescriptor(objectFreeze, "name")) //this tells what can i do with this ,can i change it can i make writable etc....
+
+
+// we can also define property descriptor 
+
+
+Object.defineProperty(objectFreeze, "name" , {
+  writable: false
+  
+})
+
+console.log(Object.getOwnPropertyDescriptor(objectFreeze, "name")) //this tells what can i do with this ,can i change it can i make writable etc....
 
