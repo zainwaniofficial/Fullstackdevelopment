@@ -213,3 +213,54 @@ console.log(product4)
 
 //if we see now we have changed the object in object 
 //this is called deep copy
+
+
+
+//object.freeze 
+
+let pmgsy = {
+  name: "dilshada akhtar",
+  unit:"sarnal payeen",
+  district : "anatnag",
+  financedBy :"Jammu and kashmir bank",
+  sponsor: "kvic"
+}
+
+
+//to delete the objects element we use just delete
+
+
+// like here if i want to delete sponsor
+
+delete pmgsy.sponsor;
+
+console.log(pmgsy)
+
+
+// but if we want to make something perminent and changes should not effact that we can use object.free for that 
+
+
+
+let objectFreeze = {
+  name: "amandeep",
+  district: "anatnag",
+  id : "25045113023",
+
+}
+
+Object.freeze(objectFreeze)
+
+
+//now if we try to make a little change in this that will not be reflected 
+
+//lets check
+
+objectFreeze.district = "Srinagar"
+
+delete objectFreeze.name
+
+
+console.log(objectFreeze) //if we see there will be nothing updated or deleted
+
+
+
