@@ -248,19 +248,33 @@ let objectFreeze = {
 
 }
 
-Object.freeze(objectFreeze)
+// Object.freeze(objectFreeze)
 
 
 //now if we try to make a little change in this that will not be reflected 
 
 //lets check
 
-objectFreeze.district = "Srinagar"
+// objectFreeze.district = "Srinagar"
 
-delete objectFreeze.name
+// delete objectFreeze.name
 
 
 console.log(objectFreeze) //if we see there will be nothing updated or deleted
 
 
+//object.seal
+
+//it is used to update the object
+
+//it can only update and can't done anything
+Object.seal(objectFreeze)
+
+objectFreeze.district = "Srinagar"
+
+delete objectFreeze.district //it will not delte the element 
+
+//object.seal only allows to update 
+
+console.log(objectFreeze)
 
