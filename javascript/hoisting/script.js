@@ -21,3 +21,32 @@ function greet()  {
     console.log("hello dosto.... kya aap ne check kiya ye ")
 }
 
+
+//global scope
+
+//which can be accessed over  all the scopes
+
+//var is a global scope variable
+
+
+{
+    {
+    {
+    {
+    var  a = 20; 
+}
+
+
+}
+}
+}
+
+
+let greeting = () =>{
+
+
+     console.log(a)
+}
+
+
+greeting()
