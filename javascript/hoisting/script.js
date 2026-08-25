@@ -129,3 +129,35 @@ let numbers = ()=>{
 
 
 numbers()
+
+
+//scope chain
+
+
+let university = "south campus";
+
+
+let department = ()=>{
+
+    let department = "Computer science"
+
+    let teachers = ()=>{
+
+        let t1 = "samia nasti"
+        let t2 = 'hilal hyder'
+        let t3 = 'abid sir'
+
+        console.log(t1)
+        console.log(t2)
+        console.log(t3)
+        console.log(department)
+        console.log(university)
+    }
+    teachers()
+}
+
+
+department()
+
+
+// we can access from the outer scope but cant from the child scope 
