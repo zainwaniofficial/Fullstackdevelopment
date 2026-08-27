@@ -69,3 +69,30 @@ counter()
 
 //lets understand this with an axample
 
+
+function bank(){
+    let balance = 1000;
+
+    return {
+        deposit(amount){
+
+        balance += amount;
+    },
+    withdraw(amount){
+        balance -= amount;
+    },
+
+    getbalance(){
+
+        return balance
+    }
+}
+}
+
+let account = bank()
+
+account.deposit(5000);
+console.log(account.getbalance())
+account.withdraw(3500)
+console.log(account.getbalance())
+// console.log(balance)
