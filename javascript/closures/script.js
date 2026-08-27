@@ -46,6 +46,26 @@ two()
 //it also the concept
 
 function outer (){
+ let count = 0 ;
+                    //inner function always keeps / remembers the outer functions lexical 
+ return function inner(){
 
-    console.log("outer function")
+    count++
+
+    console.log(count)
+ }
 }
+
+let counter = outer()
+
+counter()
+counter()
+counter()
+counter()
+
+
+//data privacy closures concept
+
+
+//lets understand this with an axample
+
