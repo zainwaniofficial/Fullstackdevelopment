@@ -92,7 +92,9 @@ function bank(){
 let account = bank()
 
 account.deposit(5000);
-console.log(account.getbalance())
+// console.log(account.getbalance())
 account.withdraw(3500)
-console.log(account.getbalance())
+// console.log(account.getbalance())
 // console.log(balance)
+
+
