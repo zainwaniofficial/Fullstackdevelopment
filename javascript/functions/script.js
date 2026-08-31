@@ -51,3 +51,34 @@ let totalprice = products(5000)
 
 
 console.log(totalprice)
+
+//now lets understand mutable and immutable
+
+
+//in simple words 
+
+//mutable is where we can make changes  to our original values 
+
+//immutable means where we cant make changes
+
+//mutable example
+
+let funn = {
+
+    naam :'zain'
+}
+
+
+console.log(funn.naam)
+
+
+funn.naam = "mehak"
+
+
+console.log(funn.naam)
+
+
+//here in this object we are able to change the val , that is why it is called mutable and this concept is called mutability 
+
+
+
