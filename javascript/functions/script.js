@@ -32,3 +32,22 @@ function sum(a,b){
 let result = sum(20,30)
 
 console.log(result)
+
+
+// impure function
+
+
+// function that uses thing from other than its scope is called impure function 
+
+
+let quantity = 23;
+
+function products(price){
+return quantity * price //here function uses outer var ,so its impure function
+}
+
+
+let totalprice = products(5000)
+
+
+console.log(totalprice)
