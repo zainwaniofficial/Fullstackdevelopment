@@ -16,3 +16,19 @@ let fun = ()=>{
 
     console.log("hello i am function")
 }
+
+fun()
+
+//pure function 
+
+//aise functions jo apne scope ke bahar ke cheezu ko na access karei na update karei na track karei unhe hum pure functions bolte hai
+
+
+function sum(a,b){
+    return a + b ;
+    //even using console in a program is not a pure function
+}
+
+let result = sum(20,30)
+
+console.log(result)
