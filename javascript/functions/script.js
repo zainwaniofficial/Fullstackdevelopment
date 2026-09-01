@@ -89,7 +89,7 @@ console.log(funn.naam)
 //in this the original value does not get affected or changed
 
 let user = {
-    name : "Irriiiii",
+    name : "chirriiiii",
     address : "Gulzarabad",
     status : "committed"
 }
@@ -105,4 +105,39 @@ newuser.address = "singhpoora"
 
 console.log(newuser)
 
+//currying
 
+
+//getting things one by one 
+
+
+function meal(burger){
+    console.log(burger)
+    return (fries)=>{
+        console.log(fries)
+            return (drinks)=>{
+                        console.log(drinks)
+                return (extra)=>{
+                        console.log("kuch nhi")
+                        return ` fries are ${fries} burger is ${burger} drinks are ${drinks}  ans extra is ${extra} `
+                }
+            }
+    }
+}
+
+
+let mymeal = meal("regular")
+
+let fries = mymeal("peri-peri")
+
+let drinks = fries("pepsi 20 wale")
+
+// let extra = drinks()
+
+
+// console.log(mymeal)
+
+let finalOrder =  drinks("abi kuch nhi")
+
+console.log(finalOrder)
+// meal()
