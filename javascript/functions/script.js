@@ -81,4 +81,28 @@ console.log(funn.naam)
 //here in this object we are able to change the val , that is why it is called mutable and this concept is called mutability 
 
 
+// immutablitlity
+
+
+//original value change nhi hote hai is ma 
+
+//in this the original value does not get affected or changed
+
+let user = {
+    name : "Irriiiii",
+    address : "Gulzarabad",
+    status : "committed"
+}
+
+
+
+console.log(user)
+
+
+let newuser = {...user , name : "chamannnnn"}
+
+newuser.address = "singhpoora"
+
+console.log(newuser)
+
 
