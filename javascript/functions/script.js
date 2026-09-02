@@ -118,7 +118,7 @@ function meal(burger){
             return (drinks)=>{
                         console.log(drinks)
                 return (extra)=>{
-                        console.log("kuch nhi")
+                        console.log(extra)
                         return ` fries are ${fries} burger is ${burger} drinks are ${drinks}  ans extra is ${extra} `
                 }
             }
@@ -126,18 +126,24 @@ function meal(burger){
 }
 
 
-let mymeal = meal("regular")
+// let mymeal = meal("regular")
 
-let fries = mymeal("peri-peri")
+// let fries = mymeal("peri-peri")
 
-let drinks = fries("pepsi 20 wale")
+// let drinks = fries("pepsi 20 wale")
 
 // let extra = drinks()
 
 
 // console.log(mymeal)
 
-let finalOrder =  drinks("abi kuch nhi")
+// let finalOrder =  drinks("abi kuch nhi")
 
-console.log(finalOrder)
+// console.log(finalOrder)
 // meal()
+
+
+// we can simply call that like this also 
+
+
+meal("regular")('peri-peri')('pepsi')('pizza')
