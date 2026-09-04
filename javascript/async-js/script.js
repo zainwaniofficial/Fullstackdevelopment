@@ -24,7 +24,7 @@ console.log("order placed done ")
 setTimeout(()=>{
 
     console.log("order ready")
-}, 8000)
+}, 2000)
 
 console.log("order preparing ")
 
@@ -62,11 +62,21 @@ setTimeout(()=>{
 // setinterval use hota hai jub humhe kiseke code ko kuch time baad baar baar run karna hota hai then we use setINterval 
 
 
-setInterval(()=>{
+let interval = setInterval(()=>{
 
     console.log("hello replyy please😋")
 
     console.log("  ")
-},5000)
+},1000)
 
+
+//now if i want to clear this interval after some time use clear interval for that 
+
+//but if we directly use clear interval our interval will be stoped before run , so we will use that also in timer 
+
+
+setTimeout(()=>{
+
+    clearInterval(interval)
+},10000)
 
