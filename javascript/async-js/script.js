@@ -43,3 +43,16 @@ console.log("chill with friends or scroll instagram")
 
 //all of this make the async behaviour
 
+
+//timers s
+
+
+//setTimeout 
+
+//set timer out ek timer function hai jo use hota hai , agar hamei apna code kuch time ke baad execute karna hoga to ya phr kuch sec ke baad at that time we use set time out
+
+setTimeout(()=>{
+    console.log("hey i am executed after 5 seconds")
+},5000)
+
+
