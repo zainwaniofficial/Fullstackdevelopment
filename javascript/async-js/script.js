@@ -56,3 +56,17 @@ setTimeout(()=>{
 },5000)
 
 
+
+// setinterval
+
+// setinterval use hota hai jub humhe kiseke code ko kuch time baad baar baar run karna hota hai then we use setINterval 
+
+
+setInterval(()=>{
+
+    console.log("hello replyy please😋")
+
+    console.log("  ")
+},5000)
+
+
