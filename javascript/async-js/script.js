@@ -80,3 +80,21 @@ setTimeout(()=>{
     clearInterval(interval)
 },10000)
 
+
+// if we want to stop the setTimeout we can also use for that clear timeout , so that that will not run 
+
+
+let run = setTimeout(()=>{
+
+    console.log("hello from run")
+}, 5000)
+
+
+// now i want it to stop before run 
+
+// i can use clear timeout 
+
+
+clearTimeout(run)  //if we check it will not run now 
+
+
