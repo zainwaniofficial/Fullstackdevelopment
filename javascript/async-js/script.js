@@ -98,3 +98,31 @@ let run = setTimeout(()=>{
 clearTimeout(run)  //if we check it will not run now 
 
 
+//async code baad ma execute hota hai aur syncronous code pehle he execute hota hai 
+
+//synchronous code 
+
+
+console.log("hello")
+console.log("hy")
+
+
+//asynchronous code 
+
+
+setTimeout(()=>{
+
+    console.log("how are u")  //this asyncronous code we gave it zero sec to wait for execution means it shoud not wait but still it will get executed after synchronous code
+},0)
+
+
+//again synchronous code
+
+
+console.log("I am fine")
+
+
+//lets check 
+
+//we found that the code which was synchronous is executed first and asynchronous has been executed after
+
